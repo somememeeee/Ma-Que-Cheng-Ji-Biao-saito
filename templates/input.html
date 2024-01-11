@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>入力ページ</title>
+    <!-- style.cssへのリンクを追加する -->
+    <link rel="stylesheet" href="static/input.css">
+</head>
+<body>
+    <form id="scoreForm">
+        <div>
+            <label for="dateInput">日付入力 (YYYY/MM/DD):</label>
+            <input type="text" id="dateInput" name="date" pattern="\d{4}/\d{2}/\d{2}" required>
+        </div>
+        <div>
+            <!-- <label for="passwordInput">パスワード入力:</label> -->
+            <!-- <input type="password" id="passwordInput" name="password" required> -->
+        </div>
+        <table>
+            <tr>
+                <th>プレイヤー名</th>
+                <th>スコア</th>
+            </tr>
+            {% for player in players %}
+            <tr>
+                <td>{{ player.name }}</td>
+                
+                <td>
+                    <input type="number" id="player{{ loop.index }}Score" name="player{{ loop.index }}Score" step="0.1"　required>
+                    <!-- <input type="number" name="player{{ loop.index }}Score" ...> -->
+                </td>
+            </tr>
+            {% endfor %}
+        </table>
+        <div>
+            <button type="submit">送信</button>
+            <button type="button" id="undoButton">取り消し</button>
+        </div>
+    </form>
+
+    <!-- scripts.jsへのリンクを追加する -->
+    <script src="static/input.js"></script>
+</body>
+</html>

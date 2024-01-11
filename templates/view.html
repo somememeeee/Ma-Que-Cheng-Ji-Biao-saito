@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Results View</title>
+    <!-- CSSファイルの読み込み -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='view.css')}}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+    <!-- ボタンを追加 -->
+    <button onclick="toggleVisibility('table-raw', this)">元データ表示、非表示</button>
+
+    <!-- 合計スコア表示・非表示ボタン -->
+    <button onclick="toggleVisibility('table-total', this)">合計ポイント表示、非表示</button>
+  
+    <!-- 推移グラフ表示・非表示ボタン -->
+    <button onclick="toggleVisibility('view-graph', this)">ポイント推移表示、非表示</button>
+  
+    <!-- divでテーブルを囲む -->
+    <div id="table-raw" style="display: none;">
+    {% for date, matches in data.items() %}
+        <h2>{{ date }}</h2>
+        <table>
+            <tr>
+                <th>何試合目</th>
+                {% for player in users %}
+                    <th>{{ users[player].name }}</th>
+                {% endfor %}
+            </tr>
+            {% for match in matches %}
+                <tr>
+                    <td>{{ loop.index }}</td>
+                    {% for score in match.scores.values() %}
+                        <td>{{ score }}</td>
+                    {% endfor %}
+                </tr>
+            {% endfor %}
+            <!-- その日の合計スコア -->
+            <tr>
+                <td>合計</td>
+                {% for player in users %}
+                    <td>{{ daily_totals[date][player] }}</td>
+                {% endfor %}
+            </tr>
+            <!-- その日の平均順位 -->
+            <tr>
+                <td>平均順位</td>
+                {% for player in users %}
+                    <td>{{ daily_average_rank[date][player] }}</td>
+                {% endfor %}
+            </tr>
+        </table>
+    {% endfor %}
+    </div>
+
+    <!-- 合計スコアテーブル -->
+    <div id="table-total" style="display: none;">
+        <h2>日程別ポイント</h2>
+        <table>
+            <tr>
+                <th>日付</th>
+                {% for player in users %}
+                    <th>{{ users[player].name }}</th>
+                {% endfor %}
+            </tr>
+            {% for date, totals in daily_totals.items() %}
+                <tr>
+                    <td>{{ date }}</td>
+                    {% for player in users %}
+                        <td>{{ totals[player] }}</td>
+                    {% endfor %}
+                </tr>
+            {% endfor %}
+            <!-- 全日程の合計ポイント表示 -->
+            <tr>
+                <td>合計スコア</td>
+                {% for player, score in total_scores.items() %}
+                    <td>{{ score }}</td>
+                {% endfor %}
+            </tr>
+            <!-- 全期間の平均順位表示 -->
+            <tr>
+                <td>全期間の平均順位</td>
+                {% for player, rank in total_average_rank.items() %}
+                    <td>{{ rank }}</td>
+                {% endfor %}
+            </tr>
+        </table>
+    </div>
+
+    <!-- グラフの画像を表示 -->
+    <div id="view-graph"  style="display: none;">
+      <img src="{{ url_for('static', filename='points_graph.png') }}" alt="ポイント推移グラフ">
+    </div>
+    <script>
+        // 特定のdivの表示状態を切り替える関数
+        function toggleVisibility(id, button) {
+            var element = document.getElementById(id);
+            if (element.style.display === "none") {
+                element.style.display = "block";
+                button.classList.add("button-active");
+            } else {
+                element.style.display = "none";
+                button.classList.remove("button-active");
+            }
+        }
+    </script>
+</body>
+</html>

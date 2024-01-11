@@ -1,0 +1,274 @@
+{
+    "2023/11/18": [
+        {
+            "scores": {
+                "player1Score": 17.8,
+                "player2Score": -55.8,
+                "player3Score": 31.4,
+                "player4Score": 5.8
+            },
+            "ranks": {
+                "player3Score": 1,
+                "player1Score": 2,
+                "player4Score": 3,
+                "player2Score": 4
+            }
+        },
+        {
+            "scores": {
+                "player1Score": 38.6,
+                "player2Score": -56.7,
+                "player3Score": 12.2,
+                "player4Score": -3.1
+            },
+            "ranks": {
+                "player1Score": 1,
+                "player3Score": 2,
+                "player4Score": 3,
+                "player2Score": 4
+            }
+        },
+        {
+            "scores": {
+                "player1Score": 3.9,
+                "player2Score": -56.3,
+                "player3Score": 17.1,
+                "player4Score": 35.3
+            },
+            "ranks": {
+                "player4Score": 1,
+                "player3Score": 2,
+                "player1Score": 3,
+                "player2Score": 4
+            }
+        },
+        {
+            "scores": {
+                "player1Score": 6.4,
+                "player2Score": -12.8,
+                "player3Score": -57.7,
+                "player4Score": 73.1
+            },
+            "ranks": {
+                "player4Score": 1,
+                "player1Score": 2,
+                "player2Score": 3,
+                "player3Score": 4
+            }
+        },
+        {
+            "scores": {
+                "player1Score": -3.4,
+                "player2Score": -47.7,
+                "player3Score": 37,
+                "player4Score": 24.1
+            },
+            "ranks": {
+                "player3Score": 1,
+                "player4Score": 2,
+                "player1Score": 3,
+                "player2Score": 4
+            }
+        },
+        {
+            "scores": {
+                "player1Score": 33.4,
+                "player2Score": 21.5,
+                "player3Score": -47.4,
+                "player4Score": 2.5
+            },
+            "ranks": {
+                "player1Score": 1,
+                "player2Score": 2,
+                "player4Score": 3,
+                "player3Score": 4
+            }
+        }
+    ],
+    "2023/12/10": [
+        {
+            "scores": {
+                "player1Score": 15,
+                "player2Score": -5,
+                "player3Score": 45.1,
+                "player4Score": -56.1
+            },
+            "ranks": {
+                "player3Score": 1,
+                "player1Score": 2,
+                "player2Score": 3,
+                "player4Score": 4
+            }
+        },
+        {
+            "scores": {
+                "player1Score": 40.9,
+                "player2Score": -4,
+                "player3Score": 18.9,
+                "player4Score": -55.4
+            },
+            "ranks": {
+                "player1Score": 1,
+                "player3Score": 2,
+                "player2Score": 3,
+                "player4Score": 4
+            }
+        },
+        {
+            "scores": {
+                "player1Score": 36.9,
+                "player2Score": -2.2,
+                "player3Score": 11.6,
+                "player4Score": -46.3
+            },
+            "ranks": {
+                "player1Score": 1,
+                "player3Score": 2,
+                "player2Score": 3,
+                "player4Score": 4
+            }
+        },
+        {
+            "scores": {
+                "player1Score": -9.5,
+                "player2Score": -41.9,
+                "player3Score": 11,
+                "player4Score": 40.4
+            },
+            "ranks": {
+                "player4Score": 1,
+                "player3Score": 2,
+                "player1Score": 3,
+                "player2Score": 4
+            }
+        },
+        {
+            "scores": {
+                "player1Score": -7.8,
+                "player2Score": -52.2,
+                "player3Score": 47.8,
+                "player4Score": 22.2
+            },
+            "ranks": {
+                "player3Score": 1,
+                "player4Score": 2,
+                "player1Score": 3,
+                "player2Score": 4
+            }
+        },
+        {
+            "scores": {
+                "player1Score": -8.5,
+                "player2Score": 12.1,
+                "player3Score": 35.4,
+                "player4Score": -39.5
+            },
+            "ranks": {
+                "player3Score": 1,
+                "player2Score": 2,
+                "player1Score": 3,
+                "player4Score": 4
+            }
+        }
+    ],
+    "2023/12/27": [
+        {
+            "scores": {
+                "player1Score": -2.6,
+                "player2Score": 38.1,
+                "player3Score": 12,
+                "player4Score": -47.5
+            },
+            "ranks": {
+                "player2Score": 1,
+                "player3Score": 2,
+                "player1Score": 3,
+                "player4Score": 4
+            }
+        },
+        {
+            "scores": {
+                "player1Score": 14.5,
+                "player2Score": -45.9,
+                "player3Score": 45.2,
+                "player4Score": -13.8
+            },
+            "ranks": {
+                "player3Score": 1,
+                "player1Score": 2,
+                "player4Score": 3,
+                "player2Score": 4
+            }
+        },
+        {
+            "scores": {
+                "player1Score": 14.9,
+                "player2Score": 57.9,
+                "player3Score": -14.9,
+                "player4Score": -57.9
+            },
+            "ranks": {
+                "player2Score": 1,
+                "player1Score": 2,
+                "player3Score": 3,
+                "player4Score": 4
+            }
+        },
+        {
+            "scores": {
+                "player1Score": -43.3,
+                "player2Score": -12.4,
+                "player3Score": 39.9,
+                "player4Score": 15.9
+            },
+            "ranks": {
+                "player3Score": 1,
+                "player4Score": 2,
+                "player2Score": 3,
+                "player1Score": 4
+            }
+        },
+        {
+            "scores": {
+                "player1Score": -13.4,
+                "player2Score": 41.7,
+                "player3Score": 27.2,
+                "player4Score": -55.5
+            },
+            "ranks": {
+                "player2Score": 1,
+                "player3Score": 2,
+                "player1Score": 3,
+                "player4Score": 4
+            }
+        },
+        {
+            "scores": {
+                "player1Score": 74.9,
+                "player2Score": 8.8,
+                "player3Score": -61.2,
+                "player4Score": -22.5
+            },
+            "ranks": {
+                "player1Score": 1,
+                "player2Score": 2,
+                "player4Score": 3,
+                "player3Score": 4
+            }
+        },
+        {
+            "scores": {
+                "player1Score": -35.4,
+                "player2Score": 26.7,
+                "player3Score": 11.1,
+                "player4Score": -3.4
+            },
+            "ranks": {
+                "player2Score": 1,
+                "player3Score": 2,
+                "player4Score": 3,
+                "player1Score": 4
+            }
+        }
+    ]
+}

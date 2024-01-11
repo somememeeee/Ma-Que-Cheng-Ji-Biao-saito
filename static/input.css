@@ -1,0 +1,83 @@
+/* 基本的なスタイリング */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    transform: scale(1.5); /* 10%拡大 */
+}
+
+/* フォームのスタイリング */
+form {
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: auto; /* フォームの幅を自動調整 */
+    max-width: 90%; /* フォームの最大幅を画面の90%に設定 */
+    margin: 20px; /* 余白を加える */
+}
+
+/* テーブルのスタイリング */
+table {
+    width: 100%;
+    max-width: 450px; /* 最大幅を設定 */
+    border-collapse: collapse;
+    margin: 0 auto; /* テーブルを中央に配置 */
+}
+
+th, td {
+    border: 1px solid #ddd;
+    text-align: left;
+    padding: 8px;
+}
+
+/* ラジオボタンとラベルのスタイリング */
+.rank label {
+    display: inline-block;
+    margin-right: 10px;
+    text-align: center;
+    background-color: #f2f2f2;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+
+
+/* 数値入力フィールドのスタイリング */
+input[type="number"] {
+    width: 100px;
+    -moz-appearance: textfield;
+}
+
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* 送信ボタンのスタイリング */
+button[type="submit"] {
+    background-color: orange;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+button[type="submit"]:hover {
+    background-color: #e69500;
+}
+
+
+@media (max-width: 768px) {
+    body {
+        margin-top:100px;
+        transform: scale(1.0); /* 10%拡大 */
+        transform-origin: top left; /* 拡大の基点を左上に設定 */
+    }
+}
